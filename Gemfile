@@ -16,6 +16,10 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# デバッグ用
+gem 'pry-rails'
+gem 'pry-byebug'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
