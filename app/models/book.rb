@@ -1,4 +1,7 @@
 class Book < ApplicationRecord
+
+  # ファイルをモデルと紐づける
+  # 本来ならここはモデルが持つカラムの名前にする
   has_one_attached :book_image
   attr_accessor :image
 
