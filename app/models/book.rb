@@ -1,7 +1,9 @@
 class Book < ApplicationRecord
 
   # ファイルをモデルと紐づける
-  # 本来ならここはモデルが持つカラムの名前にする
+  # active_storage_〜というテーブルにここの名前が保存され、book_imageから画像を取り出せる
+  # ex : Book.first.book_image => Book.firstの画像
+  # つまり画像用のカラムをつくる必要はない
   has_one_attached :book_image
   attr_accessor :image
 
